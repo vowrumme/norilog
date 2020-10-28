@@ -13,9 +13,10 @@ Webブラウザーでコメントを投稿するWebアプリケーションの�
 :Python:     3.6.4
 :pip:        9.0.1
 
+
+
 インストールと起動方法
 ======================
-
 リポジトリーからコードを取得し、その下にvenv環境を用意します::
 
         $ git clone https://github.com/vowrumme/norilog
@@ -37,3 +38,15 @@ Webブラウザーでコメントを投稿するWebアプリケーションの�
 
 　　(venv) $ pip install -e .
 
+依存ライブラリ変更時
+====================
+
+1. ``setup.py`` の ``install_requires``を変更する
+2. 以下の手順で環境を更新する
+
+        (venv) $ dectivate
+        $ python3.6 -m venv --clear venv
+        $ source venv/bin/activate
+        (venv) $ pip install -e ./norilog
+
+3. setup.pyをリポジトリーにコミットする
