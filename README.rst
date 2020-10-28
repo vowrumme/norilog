@@ -19,13 +19,13 @@ Webブラウザーでコメントを投稿するWebアプリケーションの�
 ======================
 リポジトリーからコードを取得し、その下にvenv環境を用意します::
 
-        $ git clone https://github.com/vowrumme/norilog
-        $ cd norilog
-        $ python3.6 -m venv venv
-        $ source venv/bin/activate
-        (venv) $ pip install .
-        (venv) $ norilog
-         * Running on http://127.0.0.1:8000/
+    $ git clone https://github.com/vowrumme/norilog
+    $ cd norilog
+    $ python3.6 -m venv venv
+    $ source venv/bin/activate
+    (venv) $ pip install .
+    (venv) $ norilog
+     * Running on http://127.0.0.1:8000/
 
 開発手順
 ========
@@ -36,7 +36,7 @@ Webブラウザーでコメントを投稿するWebアプリケーションの�
 1.チェックアウトする
 2.以下の手順でインストールする::
 
-        (venv) $ pip install -e .
+    (venv) $ pip install -e .
 
 依存ライブラリ変更時
 ====================
@@ -44,9 +44,9 @@ Webブラウザーでコメントを投稿するWebアプリケーションの�
 1. ``setup.py`` の ``install_requires`` を変更する
 2. 以下の手順で環境を更新する::
 
-        (venv) $ dectivate
-        $ python3.6 -m venv --clear venv
-        $ source venv/bin/activate
-        (venv) $ pip install -e ./norilog
+    (venv) $ dectivate
+    $ python3.6 -m venv --clear venv
+    $ source venv/bin/activate
+    (venv) $ pip install -e ./norilog
 
 3. setup.pyをリポジトリーにコミットする
