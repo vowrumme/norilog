@@ -34,15 +34,15 @@ Webブラウザーでコメントを投稿するWebアプリケーションの�
 ==================
 
 1.チェックアウトする
-2.以下の手順でインストールする
+2.以下の手順でインストールする::
 
         (venv) $ pip install -e .
 
 依存ライブラリ変更時
 ====================
 
-1. ``setup.py`` の ``install_requires``を変更する
-2. 以下の手順で環境を更新する
+1. ``setup.py`` の ``install_requires`` を変更する
+2. 以下の手順で環境を更新する::
 
         (venv) $ dectivate
         $ python3.6 -m venv --clear venv
